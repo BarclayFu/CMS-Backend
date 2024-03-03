@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "singularName": "session",
+    "pluralName": "sessions",
+    "displayName": "Session",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "enumeration",
+      "enum": [
+        "Basic",
+        "Medium",
+        "Advanced"
+      ]
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "Overview": {
+      "type": "blocks"
+    },
+    "Objectives": {
+      "type": "blocks"
+    },
+    "contents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::content.content",
+      "mappedBy": "session"
+    },
+    "Audience": {
+      "type": "enumeration",
+      "enum": [
+        "Grade 1",
+        "Grade 2",
+        "Grade 3"
+      ]
+    },
+    "program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program.program",
+      "inversedBy": "sessions"
+    }
+  }
+}
