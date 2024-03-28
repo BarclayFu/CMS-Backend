@@ -22,9 +22,6 @@
     "Title": {
       "type": "string"
     },
-    "Description": {
-      "type": "blocks"
-    },
     "Link": {
       "type": "string"
     },
@@ -38,6 +35,17 @@
       "inversedBy": "contents"
     },
     "Material": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Cover": {
       "allowedTypes": [
         "images",
         "files",
@@ -45,7 +53,10 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }

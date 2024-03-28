@@ -51,6 +51,15 @@
       "relation": "manyToOne",
       "target": "api::program.program",
       "inversedBy": "sessions"
+    },
+    "DiscussionTopics": {
+      "type": "blocks"
+    },
+    "Activities": {
+      "type": "blocks"
+    },
+    "Alignment": {
+      "type": "blocks"
     }
   }
 }

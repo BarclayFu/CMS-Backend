@@ -4,7 +4,8 @@
   "info": {
     "singularName": "program",
     "pluralName": "programs",
-    "displayName": "Program"
+    "displayName": "Program",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,18 +42,29 @@
       "type": "enumeration",
       "enum": [
         "AI",
-        "Database"
+        "Database",
+        "Coding"
       ]
     },
     "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Skill": {
+      "type": "blocks"
+    },
+    "WhatIncluded": {
+      "type": "blocks"
     }
   }
 }
