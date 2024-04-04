@@ -16,7 +16,8 @@
       "type": "enumeration",
       "enum": [
         "Video",
-        "Document"
+        "Document",
+        "PowerPoint"
       ]
     },
     "Title": {
@@ -46,14 +47,15 @@
       ]
     },
     "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Description": {
       "type": "text"
