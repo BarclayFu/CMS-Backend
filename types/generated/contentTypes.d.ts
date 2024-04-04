@@ -374,7 +374,7 @@ export interface ApiContentContent extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Type: Attribute.Enumeration<['Video', 'Document', 'PowerPoint']>;
+    Type: Attribute.Enumeration<['Video', 'Document', 'PowerPoint', 'Word']>;
     Title: Attribute.String;
     Link: Attribute.String;
     Position: Attribute.Integer;

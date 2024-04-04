@@ -17,7 +17,8 @@
       "enum": [
         "Video",
         "Document",
-        "PowerPoint"
+        "PowerPoint",
+        "Word"
       ]
     },
     "Title": {
