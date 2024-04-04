@@ -16,7 +16,7 @@
       "type": "enumeration",
       "enum": [
         "Video",
-        "Document",
+        "PDF",
         "PowerPoint",
         "Word"
       ]
